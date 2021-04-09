@@ -4,11 +4,13 @@ import androidx.room.Entity;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
+import java.io.Serializable;
+
 import markus.wieland.databases.DatabaseEntity;
 import markus.wieland.indexcards.annotation.IndexCardScore;
 
 @Entity(tableName = "index_cards")
-public class IndexCard implements DatabaseEntity {
+public class IndexCard implements DatabaseEntity, Serializable {
 
     @PrimaryKey(autoGenerate = true)
     private long indexCardId;

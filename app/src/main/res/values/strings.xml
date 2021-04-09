@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">IndexCards</string>
+    <string name="default_edit">Edit</string>
+    <string name="default_delete">Delete</string>
 </resources>

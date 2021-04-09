@@ -1,6 +1,7 @@
 package markus.wieland.indexcards;
 
 import androidx.room.Embedded;
+import androidx.room.Ignore;
 import androidx.room.Relation;
 
 import java.util.List;
@@ -44,6 +45,27 @@ public class IndexCardStackWithIndexCards implements DatabaseEntity, QueryableEn
 
     @Override
     public String getStringToApplyQuery() {
-        return indexCardStack.getTitle() + " " + indexCardStack.getDescription();
+        return indexCardStack.getTitle();
+    }
+
+    @Ignore
+    public String getProgressAsPercentage() {
+        return (getProgress() / getMaxProgress()) + "%";
+    }
+
+    @Ignore
+    public int getProgress() {
+        int progress = 0;
+        for (IndexCard indexCard : indexCards) {
+            if (indexCard.getScore() > 0) {
+                progress += indexCard.getScore();
+            }
+        }
+        return progress;
+    }
+
+    @Ignore
+    public int getMaxProgress() {
+        return indexCards.size() * IndexCard.MAX_SCORE;
     }
 }
