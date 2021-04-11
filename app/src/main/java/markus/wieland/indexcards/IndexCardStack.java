@@ -12,6 +12,8 @@ import markus.wieland.databases.DatabaseEntity;
 @Entity(tableName = "index_card_stacks")
 public class IndexCardStack implements DatabaseEntity, Serializable {
 
+    public static final long NO_INDEX_CARD_STACK = -1;
+
     @PrimaryKey(autoGenerate = true)
     private long indexCardStackId;
 

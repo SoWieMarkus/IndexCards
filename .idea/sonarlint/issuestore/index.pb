@@ -11,12 +11,8 @@ v
 Fapp/src/main/java/markus/wieland/indexcards/IndexCardStackAdapter.java,1\d\1d12ff7adb43cb533b14cf6158d14b1e1fc00775
 }
 Mapp/src/main/java/markus/wieland/indexcards/IndexCardStackWithIndexCards.java,3\0\30e2329bc969ac1ad82d18fae92dff6426aa4174
-u
-Eapp/src/main/res/layout/activity_create_index_card_stack_activity.xml,d\c\dc642bb1974bb9dcc8740a51a2c14befb80b4553
 _
 /app/src/main/res/layout/activity_index_card.xml,a\2\a207daf60c5a28d733245f8db8c1ea17902fdbed
-Y
-)app/src/main/res/layout/activity_main.xml,7\6\76b07e40f24cce093536731477540f12e7da3cb6
 V
 &app/src/main/res/values-de/strings.xml,c\e\cebba4874c445fc18e5ae5548bcc34bf9e621f8e
 P
