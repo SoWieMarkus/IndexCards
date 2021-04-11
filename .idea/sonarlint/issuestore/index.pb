@@ -3,8 +3,6 @@ w
 Gapp/src/main/java/markus/wieland/indexcards/reader/IndexCardReader.java,8\4\8459b961e3f6871fc9eca032e8f85b523ef915bc
 Š
 Zapp/src/main/java/markus/wieland/indexcards/reader/IndexCardReaderLocaleEventListener.java,c\5\c552eca18ea596d45785a87b1e2a652a0a2175c3
-}
-Mapp/src/main/java/markus/wieland/indexcards/CreateIndexCardStackActivity.java,8\b\8b38b9d91f34d6d82cda35bbaa5149e0202ae108
 j
 :app/src/main/java/markus/wieland/indexcards/IndexCard.java,8\d\8da17c11c1af8a7c2dbae73dc5d09404b54ffa67
 r
@@ -19,10 +17,6 @@ _
 /app/src/main/res/layout/activity_index_card.xml,a\2\a207daf60c5a28d733245f8db8c1ea17902fdbed
 Y
 )app/src/main/res/layout/activity_main.xml,7\6\76b07e40f24cce093536731477540f12e7da3cb6
-a
-1app/src/main/res/layout/item_index_card_stack.xml,4\4\44bd59cd753209f9b641ee21373787a627bc61ff
-S
-#app/src/main/res/values/strings.xml,d\2\d2281fbb3027de2722081a53408dd77628bf080e
 V
 &app/src/main/res/values-de/strings.xml,c\e\cebba4874c445fc18e5ae5548bcc34bf9e621f8e
 P
@@ -35,3 +29,15 @@ o
 ?app/src/main/java/markus/wieland/indexcards/IndexCardStack.java,7\0\70a52c63c9eb7a41a899828363150e42819fa9e2
 m
 =app/src/main/java/markus/wieland/indexcards/MainActivity.java,c\2\c285e4fc605f92a6652cf151cd556ed95b1b8b7d
+“
+capp/src/main/java/markus/wieland/indexcards/database/index_card_stack/IndexCardStackRepository.java,3\f\3f7956de332bdc761e40a6522c3899fa16e17f4b
+’
+bapp/src/main/java/markus/wieland/indexcards/database/index_card_stack/IndexCardStackViewModel.java,7\5\75947c0477820adf6e847a26ce4cbd2dd08c7998
+t
+Dapp/src/main/java/markus/wieland/indexcards/helper/LocalePicker.java,8\e\8ea1a9b63d59f71c9b5c2af2ef6dc149056226bb
+~
+Napp/src/main/java/markus/wieland/indexcards/IndexCardStackLanguageAdapter.java,9\b\9b42ba64cd6f8ea6350f6fb73cce29f8a4e8bb46
+v
+Fapp/src/main/java/markus/wieland/indexcards/IndexCardTestActivity.java,0\5\05e097ac4304e63a6b59b19f43d00d879e48fd6c
+„
+Tapp/src/main/java/markus/wieland/indexcards/create/CreateIndexCardStackActivity.java,f\8\f8b50f2ceda5e0780b8f72ce6b9c1dd6101b7176

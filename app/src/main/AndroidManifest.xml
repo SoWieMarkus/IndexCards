@@ -9,8 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IndexCards">
-        <activity android:name=".IndexCardActivity"></activity>
-        <activity android:name=".CreateIndexCardStackActivity" />
+        <activity android:name=".test.TestActivity"></activity>
+        <activity android:name=".practice.PracticeActivity" />
+        <activity android:name=".create.CreateIndexCardActivity" />
+        <activity android:name=".IndexCardTestActivity" />
+        <activity android:name=".IndexCardActivity" />
+        <activity android:name=".create.CreateIndexCardStackActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
