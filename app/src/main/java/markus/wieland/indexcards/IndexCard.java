@@ -1,5 +1,8 @@
 package markus.wieland.indexcards;
 
+import android.content.Context;
+import android.graphics.Color;
+
 import androidx.room.Entity;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
@@ -63,6 +66,11 @@ public class IndexCard implements DatabaseEntity, Serializable {
 
     public void setScore(int score) {
         this.score = score;
+    }
+
+    @Ignore
+    public int getColor(){
+        return Color.CYAN;
     }
 
     @Ignore

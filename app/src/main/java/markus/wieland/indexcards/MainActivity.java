@@ -12,10 +12,10 @@ import java.util.List;
 
 import markus.wieland.defaultappelements.uielements.activities.CreateItemActivity;
 import markus.wieland.defaultappelements.uielements.activities.DefaultActivity;
-import markus.wieland.indexcards.create.CreateIndexCardStackActivity;
-import markus.wieland.indexcards.database.index_card_stack.IndexCardStackViewModel;
+import markus.wieland.indexcards.stacks.CreateIndexCardStackActivity;
+import markus.wieland.indexcards.stacks.index_card_stack.IndexCardStackViewModel;
 import markus.wieland.indexcards.practice.PracticeActivity;
-import markus.wieland.indexcards.test.TestActivity;
+import markus.wieland.indexcards.games.test.TestActivity;
 
 public class MainActivity extends DefaultActivity implements IndexCardStackInteractListener, Observer<List<IndexCardStackWithIndexCards>> {
 

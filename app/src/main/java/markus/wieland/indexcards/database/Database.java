@@ -7,8 +7,8 @@ import androidx.room.RoomDatabase;
 
 import markus.wieland.indexcards.IndexCard;
 import markus.wieland.indexcards.IndexCardStack;
-import markus.wieland.indexcards.database.index_cards.IndexCardDataAccessObject;
-import markus.wieland.indexcards.database.index_card_stack.IndexCardStackDataAccessObject;
+import markus.wieland.indexcards.cards.index_cards.IndexCardDataAccessObject;
+import markus.wieland.indexcards.stacks.index_card_stack.IndexCardStackDataAccessObject;
 
 
 @androidx.room.Database(entities = {IndexCard.class, IndexCardStack.class}, version = 1)

@@ -28,12 +28,14 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:id="@+id/item_subject_color"
+                android:id="@+id/item_index_card_rating"
                 android:layout_width="20dp"
                 android:layout_height="match_parent"
                 android:background="@color/purple_700"
                 android:elevation="8dp"
-                android:orientation="vertical"></LinearLayout>
+                android:orientation="vertical">
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -48,61 +50,22 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/item_subject_title"
+                        android:id="@+id/item_index_card_term"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:layout_weight="1"
                         android:ellipsize="end"
                         android:maxLines="1"
-                        android:text="2fsegeg"
                         android:textSize="16sp" />
 
-                    <LinearLayout
+
+                    <TextView
+                        android:id="@+id/item_index_card_description"
+                        android:ellipsize="end"
+                        android:maxLines="1"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:id="@+id/imageView7"
-                            android:layout_width="15dp"
-                            android:layout_height="15dp"
-                            />
-
-                        <TextView
-                            android:id="@+id/item_subject_teacher"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="TextView" />
-                    </LinearLayout>
-
+                        android:layout_height="wrap_content" />
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/item_subject_average"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="12313" />
-
-                    <TextView
-                        android:id="@+id/item_subject_average_goal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="12131"
-                        android:textSize="10sp" />
-                </LinearLayout>
 
             </LinearLayout>
 
