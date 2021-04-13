@@ -25,8 +25,6 @@ Rapp/src/main/java/markus/wieland/indexcards/games/test/IndexCardTestGameState.j
 Sapp/src/main/java/markus/wieland/indexcards/games/test/IndexCardTestGameResult.java,7\b\7bbfa84c0a0ebf4578032ee744d31933957e6d9b
 â
 Yapp/src/main/java/markus/wieland/indexcards/games/IndexCardGameBoardInteractListener.java,4\0\40cb15490666163e2ac59422061495594feca2f1
-}
-Mapp/src/main/java/markus/wieland/indexcards/games/IndexCardGameBoardView.java,a\0\a0846a0478120a79169c311d6ed598f5bed22e06
 q
 Aapp/src/main/java/markus/wieland/indexcards/IndexCardAdapter.java,6\2\626fd798b416915fdcae3adc5437912961b6baeb
 ~
@@ -47,3 +45,27 @@ o
 ?app/src/main/java/markus/wieland/indexcards/IndexCardStack.java,7\0\70a52c63c9eb7a41a899828363150e42819fa9e2
 }
 Mapp/src/main/java/markus/wieland/indexcards/IndexCardStackWithIndexCards.java,3\0\30e2329bc969ac1ad82d18fae92dff6426aa4174
+{
+Kapp/src/main/java/markus/wieland/indexcards/practice/PracticeGameState.java,4\2\42810da7c791bc011255b4a6cb7ed1b3e0595ead
+{
+Kapp/src/main/java/markus/wieland/indexcards/practice/PracticeGenerator.java,0\9\0959182b967e826682a9e8d006ed4ebd1520ab58
+|
+Lapp/src/main/java/markus/wieland/indexcards/practice/PracticeGameResult.java,9\f\9f542ec289ca2630c962d50a7388360c201dd826
+ã
+[app/src/main/java/markus/wieland/indexcards/practice/PracticeGameBoardInteractListener.java,9\9\9944bdd0b9db47d535d1d1e0fb6a6d34ac06082d
+
+Oapp/src/main/java/markus/wieland/indexcards/practice/PracticeConfiguration.java,2\3\237c5ecd2fbb4f0c6a58cebb3e4fa9fa9462fc47
+ê
+`app/src/main/java/markus/wieland/indexcards/stacks/index_card_stack/IndexCardStackViewModel.java,8\a\8ad34b71adc2759d36569b6a8d3055eaf144080f
+z
+Japp/src/main/java/markus/wieland/indexcards/practice/PracticeFragment.java,5\1\5149e7ca48ed935898161743f3ecaa66d9d3a9d7
+
+Oapp/src/main/java/markus/wieland/indexcards/practice/PracticeGameBoardView.java,f\d\fd253f13ee190153a2aed9f68132670125ed265f
+
+Oapp/src/main/java/markus/wieland/indexcards/practice/PracticeIndexCardView.java,8\d\8dc97c8c3f9c1315015becadcdbcc693d3054b2f
+{
+Kapp/src/main/java/markus/wieland/indexcards/practice/PracticeEndScreen.java,0\7\0709aac02008a9afc8ab505eb4376996b1773a58
+v
+Fapp/src/main/java/markus/wieland/indexcards/practice/PracticeGame.java,7\9\79d929582c32f7b76990a21148db758af22566a7
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e

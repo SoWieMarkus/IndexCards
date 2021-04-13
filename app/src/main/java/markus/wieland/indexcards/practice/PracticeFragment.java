@@ -3,7 +3,7 @@ package markus.wieland.indexcards.practice;
 import markus.wieland.games.game.level.LevelFragment;
 import markus.wieland.games.game.level.LevelResult;
 import markus.wieland.indexcards.R;
-import markus.wieland.indexcards.games.IndexCardLevel;
+import markus.wieland.indexcards.practice.level.IndexCardLevel;
 
 public class PracticeFragment extends LevelFragment<IndexCardLevel> {
 
@@ -20,7 +20,7 @@ public class PracticeFragment extends LevelFragment<IndexCardLevel> {
 
     @Override
     protected void loadLevel() {
-        practiceIndexCardView.load(level.getIndexCard());
+        practiceIndexCardView.load(level.getIndexCard(), false);
     }
 
     @Override

@@ -10,11 +10,11 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import markus.wieland.defaultappelements.uielements.adapter.DefaultAdapter;
 import markus.wieland.defaultappelements.uielements.adapter.DefaultViewHolder;
+import markus.wieland.defaultappelements.uielements.adapter.QueryableAdapter;
 import markus.wieland.defaultappelements.uielements.adapter.iteractlistener.OnItemInteractListener;
 
-public class IndexCardAdapter extends DefaultAdapter<IndexCard, IndexCardAdapter.IndexCardViewHolder> {
+public class IndexCardAdapter extends QueryableAdapter<Long, IndexCard, IndexCardAdapter.IndexCardViewHolder> {
 
     public IndexCardAdapter(OnItemInteractListener<IndexCard> onItemInteractListener) {
         super(onItemInteractListener);

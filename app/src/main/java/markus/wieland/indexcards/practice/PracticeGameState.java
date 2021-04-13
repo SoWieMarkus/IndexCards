@@ -2,7 +2,7 @@ package markus.wieland.indexcards.practice;
 
 import markus.wieland.games.game.level.LevelManager;
 import markus.wieland.games.persistence.GameState;
-import markus.wieland.indexcards.games.IndexCardLevel;
+import markus.wieland.indexcards.practice.level.IndexCardLevel;
 
 public class PracticeGameState implements GameState {
 

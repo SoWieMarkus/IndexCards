@@ -5,8 +5,8 @@ import java.util.List;
 
 import markus.wieland.games.game.GameResult;
 import markus.wieland.indexcards.IndexCard;
-import markus.wieland.indexcards.games.IndexCardLevel;
-import markus.wieland.indexcards.games.IndexCardLevelResult;
+import markus.wieland.indexcards.practice.level.IndexCardLevel;
+import markus.wieland.indexcards.practice.level.IndexCardLevelResult;
 
 public class PracticeGameResult implements GameResult {
 

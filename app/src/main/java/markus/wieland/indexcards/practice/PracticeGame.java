@@ -6,8 +6,8 @@ import java.time.temporal.ChronoUnit;
 import markus.wieland.games.game.Game;
 import markus.wieland.games.game.GameEventListener;
 import markus.wieland.games.game.level.LevelManager;
-import markus.wieland.indexcards.games.IndexCardLevel;
-import markus.wieland.indexcards.games.IndexCardLevelResult;
+import markus.wieland.indexcards.practice.level.IndexCardLevel;
+import markus.wieland.indexcards.practice.level.IndexCardLevelResult;
 
 public class PracticeGame extends Game<PracticeGameState, PracticeGameResult> implements PracticeGameBoardInteractListener {
 

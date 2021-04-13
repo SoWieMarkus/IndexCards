@@ -9,10 +9,11 @@ import androidx.room.PrimaryKey;
 import java.io.Serializable;
 
 import markus.wieland.databases.DatabaseEntity;
+import markus.wieland.defaultappelements.uielements.adapter.QueryableEntity;
 import markus.wieland.indexcards.annotation.IndexCardScore;
 
 @Entity(tableName = "index_cards")
-public class IndexCard implements DatabaseEntity, Serializable {
+public class IndexCard implements DatabaseEntity, Serializable, QueryableEntity<Long> {
 
     @PrimaryKey(autoGenerate = true)
     private long indexCardId;
@@ -97,5 +98,15 @@ public class IndexCard implements DatabaseEntity, Serializable {
     @Override
     public long getUniqueId() {
         return getIndexCardId();
+    }
+
+    @Override
+    public Long getId() {
+        return getUniqueId();
+    }
+
+    @Override
+    public String getStringToApplyQuery() {
+        return term + " " + definition;
     }
 }

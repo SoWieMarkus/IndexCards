@@ -15,7 +15,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IndexCards">
-        <activity android:name="markus.wieland.indexcards.games.test.TestActivity"></activity>
         <activity android:name=".practice.PracticeActivity" />
         <activity android:name=".cards.CreateIndexCardActivity" />
         <activity android:name=".IndexCardTestActivity" />

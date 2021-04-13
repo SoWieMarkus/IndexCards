@@ -1,11 +1,23 @@
 
-—
-java:S11860"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(£ğüÔ
-œ
-java:S1186+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‘Ø½íüÿÿÿÿ
 T
-java:S1135E"2Complete the task associated to this TODO comment.(ó°˜øÿÿÿÿ8¦’§ÅŒ/
-M
-java:S1128"0Remove this unused import 'androidx.room.Index'.(É‘¤Á8¦’§ÅŒ/
+java:S1135l"2Complete the task associated to this TODO comment.(ó°˜øÿÿÿÿ8ÃáÈãŒ/
+U
+java:S1135"2Complete the task associated to this TODO comment.(¢Ïƒúÿÿÿÿ8ÃáÈãŒ/
+O
+java:S1135E"2Complete the task associated to this TODO comment.(¶çÈÅ8ÃáÈãŒ/
+O
+java:S1135v"2Complete the task associated to this TODO comment.(¥–š8ÃáÈãŒ/
+O
+java:S1135w"2Complete the task associated to this TODO comment.(í¦Å8ÃáÈãŒ/
+
+java:S1186>"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(£ğüÔ8ÃáÈãŒ/
 T
-java:S1135N"2Complete the task associated to this TODO comment.(•€âøÿÿÿÿ8±¤ªÅŒ/
+java:S1135u"2Complete the task associated to this TODO comment.(•€âøÿÿÿÿ8ÃáÈãŒ/
+£
+java:S11869"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‘Ø½íüÿÿÿÿ8ÃáÈãŒ/
+d
+java:S1075‹"ARefactor your code to get this URI from a customizable parameter.(ÓŠÆ¯úÿÿÿÿ8¡ØÒæŒ/
+K
+java:S1604†"(Make this anonymous inner class a lambda(šÙîøÿÿÿÿ8È™ËæŒ/
+O
+java:S1135F"2Complete the task associated to this TODO comment.(à¹ 8ÃáÈãŒ/

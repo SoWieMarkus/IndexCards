@@ -1,4 +1,4 @@
-package markus.wieland.indexcards.games;
+package markus.wieland.indexcards.practice.level;
 
 import markus.wieland.games.game.level.LevelResult;
 

@@ -35,7 +35,7 @@ public class PracticeIndexCardView extends FrameLayout implements View.OnClickLi
     private ConstraintLayout constraintLayoutForeground;
 
     public PracticeIndexCardView(@NonNull Context context) {
-        this(context,null);
+        this(context, null);
     }
 
     public PracticeIndexCardView(@NonNull Context context, @Nullable AttributeSet attrs) {
@@ -48,8 +48,7 @@ public class PracticeIndexCardView extends FrameLayout implements View.OnClickLi
     }
 
 
-
-    private void init(){
+    private void init() {
         View view = LayoutInflater.from(getContext()).inflate(R.layout.view_index_card, this, true);
 
         constraintLayoutBackground = findViewById(R.id.item_card_background);
@@ -77,9 +76,9 @@ public class PracticeIndexCardView extends FrameLayout implements View.OnClickLi
         view.setOnClickListener(this);
     }
 
-    public void load(IndexCard indexCard) {
-        textViewBackground.setText(indexCard.getDefinition());
-        textViewForeground.setText(indexCard.getTerm());
+    public void load(IndexCard indexCard, boolean switchSides) {
+        textViewBackground.setText(switchSides ? indexCard.getTerm() : indexCard.getDefinition());
+        textViewForeground.setText(switchSides ? indexCard.getDefinition() : indexCard.getTerm());
     }
 
     @Override
@@ -87,7 +86,7 @@ public class PracticeIndexCardView extends FrameLayout implements View.OnClickLi
         flip();
     }
 
-    private void flip(){
+    private void flip() {
         if (!isBackVisible) {
             mSetRightOut.setTarget(constraintLayoutForeground);
             mSetLeftIn.setTarget(constraintLayoutBackground);

@@ -1,7 +1,5 @@
 package markus.wieland.indexcards.practice;
 
-import android.os.Bundle;
-
 import androidx.lifecycle.ViewModelProviders;
 
 import java.util.List;

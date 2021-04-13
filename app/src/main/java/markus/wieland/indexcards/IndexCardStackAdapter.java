@@ -2,7 +2,6 @@ package markus.wieland.indexcards;
 
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -33,7 +32,7 @@ public class IndexCardStackAdapter extends QueryableAdapter<Long, IndexCardStack
         return (IndexCardStackInteractListener) onItemInteractListener;
     }
 
-    public class IndexCardStackViewHolder extends DefaultViewHolder<IndexCardStackWithIndexCards>  {
+    public class IndexCardStackViewHolder extends DefaultViewHolder<IndexCardStackWithIndexCards> {
 
         private ProgressBar itemIndexCardStackProgress;
         private TextView itemIndexCardStackTitle;
@@ -83,17 +82,17 @@ public class IndexCardStackAdapter extends QueryableAdapter<Long, IndexCardStack
 
         private final IndexCardStackWithIndexCards indexCardStackWithIndexCards;
 
-        public OnCreateContextMenuListener(IndexCardStackWithIndexCards indexCardStackWithIndexCards){
+        public OnCreateContextMenuListener(IndexCardStackWithIndexCards indexCardStackWithIndexCards) {
             this.indexCardStackWithIndexCards = indexCardStackWithIndexCards;
         }
 
         @Override
         public void onCreateContextMenu(ContextMenu contextMenu, View view, ContextMenu.ContextMenuInfo contextMenuInfo) {
-            contextMenu.add(0,1,0, R.string.default_edit).setOnMenuItemClickListener(menuItem -> {
+            contextMenu.add(0, 1, 0, R.string.default_edit).setOnMenuItemClickListener(menuItem -> {
                 getOnItemInteractListener().onEdit(indexCardStackWithIndexCards);
                 return true;
             });
-            contextMenu.add(0,1,0, R.string.default_delete).setOnMenuItemClickListener(menuItem -> {
+            contextMenu.add(0, 1, 0, R.string.default_delete).setOnMenuItemClickListener(menuItem -> {
                 getOnItemInteractListener().onDelete(indexCardStackWithIndexCards);
                 return true;
             });

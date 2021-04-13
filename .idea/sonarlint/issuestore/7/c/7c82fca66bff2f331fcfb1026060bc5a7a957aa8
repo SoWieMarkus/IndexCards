@@ -1,12 +1,12 @@
 
-R
-java:S1068"7Remove this unused "spinnerLanguageTerm" private field.(“ ¨•úÿÿÿÿ
-Q	java:S125F"<This block of commented-out lines of code should be removed.(è•íÿ
 }
-java:S1450"bRemove the "spinnerLanguageTerm" field and declare it as a local variable in the relevant methods.(“ ¨•úÿÿÿÿ
-Y
-java:S1068">Remove this unused "spinnerLanguageDescription" private field.(î¬‰Ìþÿÿÿÿ
-„
-java:S1450"iRemove the "spinnerLanguageDescription" field and declare it as a local variable in the relevant methods.(î¬‰Ìþÿÿÿÿ
+java:S1450"bRemove the "spinnerLanguageTerm" field and declare it as a local variable in the relevant methods.(“ ¨•úÿÿÿÿ
 —
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(£ðüÔ
+java:S1186!"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(£ðüÔ
+R
+java:S1068"7Remove this unused "spinnerLanguageTerm" private field.(“ ¨•úÿÿÿÿ
+Q	java:S125["<This block of commented-out lines of code should be removed.(è•íÿ
+Y
+java:S1068">Remove this unused "spinnerLanguageDescription" private field.(î¬‰Ìþÿÿÿÿ
+„
+java:S1450"iRemove the "spinnerLanguageDescription" field and declare it as a local variable in the relevant methods.(î¬‰Ìþÿÿÿÿ

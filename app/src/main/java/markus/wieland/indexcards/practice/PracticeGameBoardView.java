@@ -2,7 +2,6 @@ package markus.wieland.indexcards.practice;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -15,14 +14,12 @@ import markus.wieland.games.game.level.LevelManager;
 import markus.wieland.games.game.view.GameBoardView;
 import markus.wieland.games.persistence.GameState;
 import markus.wieland.indexcards.R;
-import markus.wieland.indexcards.games.IndexCardLevel;
+import markus.wieland.indexcards.practice.level.IndexCardLevel;
 
 public class PracticeGameBoardView extends GameBoardView {
 
     private ProgressBar progressBarOfLevels;
     private TextView textViewProgressOfLevels;
-
-    private FrameLayout frameLayout;
 
     public PracticeGameBoardView(@NonNull Context context) {
         super(context);

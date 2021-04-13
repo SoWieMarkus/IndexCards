@@ -8,7 +8,7 @@ import markus.wieland.games.game.GameConfiguration;
 import markus.wieland.games.game.level.LevelManager;
 import markus.wieland.games.persistence.GameGenerator;
 import markus.wieland.indexcards.IndexCard;
-import markus.wieland.indexcards.games.IndexCardLevel;
+import markus.wieland.indexcards.practice.level.IndexCardLevel;
 
 public class PracticeGenerator extends GameGenerator<PracticeGameState> {
 
