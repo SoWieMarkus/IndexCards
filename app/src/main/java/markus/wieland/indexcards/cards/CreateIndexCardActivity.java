@@ -3,10 +3,13 @@ package markus.wieland.indexcards.cards;
 import android.os.Bundle;
 
 import androidx.lifecycle.ViewModelProviders;
-import androidx.room.Index;
 
 import com.google.android.material.textfield.TextInputLayout;
 
+import markus.wieland.defaultappelements.textinputvalidator.TextInputValidator;
+import markus.wieland.defaultappelements.textinputvalidator.ValidatorResult;
+import markus.wieland.defaultappelements.textinputvalidator.arguments.MaxLengthValidatorArgument;
+import markus.wieland.defaultappelements.textinputvalidator.arguments.MinLengthValidatorArgument;
 import markus.wieland.defaultappelements.uielements.activities.CreateItemActivity;
 import markus.wieland.indexcards.IndexCard;
 import markus.wieland.indexcards.IndexCardStack;
@@ -24,13 +27,16 @@ public class CreateIndexCardActivity extends CreateItemActivity<IndexCard> {
 
     private IndexCardViewModel indexCardViewModel;
 
+    private TextInputValidator textInputValidatorTerm;
+    private TextInputValidator textInputValidatorDefinition;
+
     public CreateIndexCardActivity() {
         super(R.layout.activity_create_index_card);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        indexCardStack = (IndexCardStack)getIntent().getSerializableExtra(KEY_INDEX_CARD_STACK_ID);
+        indexCardStack = (IndexCardStack) getIntent().getSerializableExtra(KEY_INDEX_CARD_STACK_ID);
         if (indexCardStack == null) {
             setResult(RESULT_CANCELED);
             finish();
@@ -52,8 +58,31 @@ public class CreateIndexCardActivity extends CreateItemActivity<IndexCard> {
     @Override
     protected boolean validateItem() {
 
+        //TODO if image there is no need for text
+        //TODO at the same time there is no need for an image
+
+        ValidatorResult termResult = textInputValidatorTerm.validate(getTerm());
+        ValidatorResult definitionResult = textInputValidatorDefinition.validate(getDefinition());
+
+        if (!termResult.isValid()){
+            textInputLayoutTerm.setError(termResult.getErrorMessage());
+            return false;
+        }
+
+        if (!definitionResult.isValid()) {
+            textInputLayoutDefinition.setError(definitionResult.getErrorMessage());
+            return false;
+        }
 
         return true;
+    }
+
+    private String getTerm() {
+        return textInputLayoutTerm.getEditText().getText().toString().trim();
+    }
+
+    private String getDefinition() {
+        return textInputLayoutDefinition.getEditText().getText().toString().trim();
     }
 
     @Override
@@ -76,7 +105,9 @@ public class CreateIndexCardActivity extends CreateItemActivity<IndexCard> {
         indexCardViewModel.insert(indexCard);
 
         //TODO clear views
-        
+        //TODO Vllt eine Liste mit allen Wörtern in der Activity für bessere übersichtlichkeit
+        //TODO wenn man Bilder etc hinzugefügt hat, dann benötigt man keinen Text!
+
 
     }
 
@@ -89,6 +120,15 @@ public class CreateIndexCardActivity extends CreateItemActivity<IndexCard> {
     @Override
     public void initializeViews() {
         indexCardViewModel = ViewModelProviders.of(this).get(IndexCardViewModel.class);
+
+        //TODO Real error messages
+        textInputValidatorTerm = new TextInputValidator()
+                .add(new MaxLengthValidatorArgument(1000,""))
+                .add(new MinLengthValidatorArgument(1,""));
+        textInputValidatorDefinition = new TextInputValidator()
+                .add(new MaxLengthValidatorArgument(1000,""))
+                .add(new MinLengthValidatorArgument(1,""));
     }
+
 
 }

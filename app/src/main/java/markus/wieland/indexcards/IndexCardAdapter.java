@@ -4,6 +4,7 @@ import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -36,6 +37,7 @@ public class IndexCardAdapter extends DefaultAdapter<IndexCard, IndexCardAdapter
         private LinearLayout itemIndexCardRating;
         private TextView itemIndexCardTerm;
         private TextView itemIndexCardDescription;
+        private ImageButton itemIndexCardManage;
 
         public IndexCardViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -46,6 +48,7 @@ public class IndexCardAdapter extends DefaultAdapter<IndexCard, IndexCardAdapter
             itemIndexCardTerm = findViewById(R.id.item_index_card_term);
             itemIndexCardDescription = findViewById(R.id.item_index_card_description);
             itemIndexCardRating = findViewById(R.id.item_index_card_rating);
+            itemIndexCardManage = findViewById(R.id.item_index_card_manage);
         }
 
         @Override
@@ -55,6 +58,7 @@ public class IndexCardAdapter extends DefaultAdapter<IndexCard, IndexCardAdapter
             itemIndexCardTerm.setText(indexCard.getTerm());
             itemIndexCardDescription.setText(indexCard.getDefinition());
             itemIndexCardRating.setBackgroundColor(indexCard.getColor());
+            itemIndexCardManage.setOnClickListener(v -> itemView.showContextMenu());
         }
     }
 

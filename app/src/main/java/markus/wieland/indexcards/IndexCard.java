@@ -1,6 +1,5 @@
 package markus.wieland.indexcards;
 
-import android.content.Context;
 import android.graphics.Color;
 
 import androidx.room.Entity;
@@ -69,7 +68,7 @@ public class IndexCard implements DatabaseEntity, Serializable {
     }
 
     @Ignore
-    public int getColor(){
+    public int getColor() {
         return Color.CYAN;
     }
 
