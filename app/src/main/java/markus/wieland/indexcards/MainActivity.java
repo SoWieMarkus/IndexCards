@@ -1,7 +1,10 @@
 package markus.wieland.indexcards;
 
 import android.content.Intent;
+import android.view.Menu;
+import android.view.MenuItem;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -15,7 +18,7 @@ import markus.wieland.defaultappelements.uielements.activities.DefaultActivity;
 import markus.wieland.indexcards.stacks.CreateIndexCardStackActivity;
 import markus.wieland.indexcards.stacks.index_card_stack.IndexCardStackViewModel;
 import markus.wieland.indexcards.practice.PracticeActivity;
-import markus.wieland.indexcards.games.test.TestActivity;
+
 
 public class MainActivity extends DefaultActivity implements IndexCardStackInteractListener, Observer<List<IndexCardStackWithIndexCards>> {
 
@@ -50,7 +53,8 @@ public class MainActivity extends DefaultActivity implements IndexCardStackInter
 
     @Override
     public void onClick(IndexCardStackWithIndexCards indexCardStackWithIndexCards) {
-        startActivity(new Intent(this, IndexCardActivity.class));
+        startActivity(new Intent(this, IndexCardActivity.class)
+                .putExtra(IndexCardActivity.KEY_INDEX_CARD_STACK, indexCardStackWithIndexCards.getIndexCardStack()));
     }
 
     @Override
@@ -71,7 +75,7 @@ public class MainActivity extends DefaultActivity implements IndexCardStackInter
             //TODO error toast
             return;
         }
-        startActivity(new Intent(this, TestActivity.class));
+        startActivity(new Intent(this, IndexCardTestActivity.class));
 
     }
 
@@ -97,9 +101,19 @@ public class MainActivity extends DefaultActivity implements IndexCardStackInter
                 indexCardStackViewModel.insert(indexCardStack);
         }
 
-
         super.onActivityResult(requestCode, resultCode, data);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_activity_index_card_stack, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.activity_index_card_stack_add)
+            startActivityForResult(new Intent(this, CreateIndexCardStackActivity.class), CreateItemActivity.REQUEST_CREATE);
+        return super.onOptionsItemSelected(item);
+    }
 }

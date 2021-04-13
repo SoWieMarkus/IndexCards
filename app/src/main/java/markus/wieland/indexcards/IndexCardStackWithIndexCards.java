@@ -51,7 +51,7 @@ public class IndexCardStackWithIndexCards implements DatabaseEntity, QueryableEn
     @Ignore
     public String getProgressAsPercentage() {
         if (getMaxProgress() == 0) return "0%";
-        return (getProgress() / getMaxProgress()) + "%";
+        return (int)((getProgress() / (float)getMaxProgress()) * 100) + "%";
     }
 
     @Ignore
