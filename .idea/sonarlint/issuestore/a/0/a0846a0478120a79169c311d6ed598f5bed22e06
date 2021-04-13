@@ -1,9 +1,9 @@
 
 £
 java:S1186+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÅÊƒªÿÿÿÿÿ8º€Ú¶Œ/
-Q
-java:S1068"/Remove this unused "frameLayout" private field.(Éàú–úÿÿÿÿ8¨ò¶Œ/
-Y
-java:S1068"7Remove this unused "progressBarOfLevels" private field.(¼†ò—øÿÿÿÿ8Š«ë¶Œ/
 
 java:S1186!"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(çä³÷8º€Ú¶Œ/
+Y
+java:S1068"7Remove this unused "progressBarOfLevels" private field.(¼†ò—øÿÿÿÿ8Š«ë¶Œ/
+Q
+java:S1068"/Remove this unused "frameLayout" private field.(Éàú–úÿÿÿÿ8¨ò¶Œ/

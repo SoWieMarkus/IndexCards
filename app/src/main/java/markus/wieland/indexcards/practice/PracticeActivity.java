@@ -1,5 +1,7 @@
 package markus.wieland.indexcards.practice;
 
+import android.os.Bundle;
+
 import androidx.lifecycle.ViewModelProviders;
 
 import java.util.List;
@@ -10,7 +12,6 @@ import markus.wieland.games.game.GameConfiguration;
 import markus.wieland.games.game.Highscore;
 import markus.wieland.games.persistence.GameGenerator;
 import markus.wieland.games.persistence.GameSaver;
-import markus.wieland.games.screen.interact_listener.EndScreenInteractListener;
 import markus.wieland.games.screen.view.EndScreenView;
 import markus.wieland.games.screen.view.StartScreenView;
 import markus.wieland.indexcards.IndexCard;
@@ -32,12 +33,12 @@ public class PracticeActivity extends GameActivity<PracticeConfiguration, Highsc
 
     @Override
     protected EndScreenView initializeEndScreen() {
-        return null;
+        return findViewById(R.id.activity_practice_end_screen);
     }
 
     @Override
     protected GameGenerator<PracticeGameState> initializeGenerator(GameConfiguration configuration) {
-        return new PracticeGenerator((PracticeConfiguration) configuration);
+        return new PracticeGenerator(configuration);
     }
 
     @Override
@@ -47,10 +48,13 @@ public class PracticeActivity extends GameActivity<PracticeConfiguration, Highsc
 
     @Override
     protected void initializeGame(PracticeGameState practiceGameState) {
-        endScreen.setScreenInteractListener(withConfiguration -> {
+        /*endScreen.setScreenInteractListener(withConfiguration -> {
             if (withConfiguration) restartActivity(true);
             else finish();
-        });
+        });*/
+
+        game = new PracticeGame(this, practiceGameState, findViewById(R.id.activity_practice_game_board));
+
         indexCardViewModel = ViewModelProviders.of(this).get(IndexCardViewModel.class);
     }
 
@@ -70,4 +74,5 @@ public class PracticeActivity extends GameActivity<PracticeConfiguration, Highsc
             indexCardViewModel.update(indexCard);
         }
     }
+
 }

@@ -16,6 +16,7 @@ public class PracticeConfiguration implements GameConfiguration {
     // - repeat until every question is answered
     // - shuffle
     // - borders
+    // - switch front and back
 
     public PracticeConfiguration(List<IndexCard> indexCardsToPractice, @IndexCardScore int lowestRating, @IndexCardScore int highestRating) {
         this.indexCardsToPractice = indexCardsToPractice;

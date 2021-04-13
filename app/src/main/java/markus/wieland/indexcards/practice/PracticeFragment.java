@@ -1,26 +1,30 @@
 package markus.wieland.indexcards.practice;
 
-import markus.wieland.defaultappelements.uielements.fragments.DefaultFragment;
+import markus.wieland.games.game.level.LevelFragment;
+import markus.wieland.games.game.level.LevelResult;
 import markus.wieland.indexcards.R;
 import markus.wieland.indexcards.games.IndexCardLevel;
 
-public class PracticeFragment extends DefaultFragment {
+public class PracticeFragment extends LevelFragment<IndexCardLevel> {
 
-    public PracticeFragment() {
-        super(R.layout.fragment_practice);
+    private PracticeIndexCardView practiceIndexCardView;
+
+    public PracticeFragment(IndexCardLevel level) {
+        super(R.layout.fragment_practice, level, null);
     }
 
     @Override
-    public void initialize() {
-        super.initialize();
+    protected void initializeViews() {
+        practiceIndexCardView = findViewById(R.id.fragment_practice_index_card);
     }
 
     @Override
-    public void bindViews() {
-
+    protected void loadLevel() {
+        practiceIndexCardView.load(level.getIndexCard());
     }
 
-    public void load(IndexCardLevel indexCardLevel) {
-
+    @Override
+    protected LevelResult getResult() {
+        return null;
     }
 }

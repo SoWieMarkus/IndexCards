@@ -18,7 +18,7 @@ public class IndexCardLevel extends Level {
     }
 
     @Override
-    protected void finishLevel(LevelResult levelResult) {
+    public void finishLevel(LevelResult levelResult) {
         indexCardLevelResult = (IndexCardLevelResult) levelResult;
         indexCard.rate(indexCardLevelResult.isAnsweredCorrectly());
     }

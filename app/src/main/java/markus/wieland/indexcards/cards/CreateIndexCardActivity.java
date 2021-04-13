@@ -1,10 +1,17 @@
 package markus.wieland.indexcards.cards;
 
+import android.Manifest;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.view.View;
 
 import androidx.lifecycle.ViewModelProviders;
 
 import com.google.android.material.textfield.TextInputLayout;
+
+import java.io.File;
 
 import markus.wieland.defaultappelements.textinputvalidator.TextInputValidator;
 import markus.wieland.defaultappelements.textinputvalidator.ValidatorResult;
@@ -43,6 +50,7 @@ public class CreateIndexCardActivity extends CreateItemActivity<IndexCard> {
             return;
         }
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
@@ -92,8 +100,10 @@ public class CreateIndexCardActivity extends CreateItemActivity<IndexCard> {
             return;
         }
 
-        String term = textInputLayoutTerm.getEditText().getText().toString().trim();
-        String definition = textInputLayoutDefinition.getEditText().getText().toString().trim();
+        if (!validateItem()) return;
+
+        String term = getTerm();
+        String definition = getDefinition();
 
         //TODO validate
 
@@ -120,6 +130,16 @@ public class CreateIndexCardActivity extends CreateItemActivity<IndexCard> {
     @Override
     public void initializeViews() {
         indexCardViewModel = ViewModelProviders.of(this).get(IndexCardViewModel.class);
+
+        findViewById(R.id.imageButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.INTERNET}, 1001);
+
+                Uri uriSavedImage= Uri.fromFile(new File("/sdcard/flashCropped.png"));
+                startActivityForResult(new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE).putExtra(MediaStore.EXTRA_OUTPUT,uriSavedImage),100);
+            }
+        });
 
         //TODO Real error messages
         textInputValidatorTerm = new TextInputValidator()

@@ -1,13 +1,11 @@
 
-u
-java:S1450"_Remove the "indexCardStackId" field and declare it as a local variable in the relevant methods.(ñëÛ
-œ
-java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‘Ø½íüÿÿÿÿ
 —
-java:S1186%"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(£ğüÔ
+java:S11860"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(£ğüÔ
 œ
-java:S11869"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(§ÂË¤ûÿÿÿÿ
-œ
-java:S1186>"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(îî¯Àÿÿÿÿÿ
-1
-java:S36262"Remove this redundant jump.(ûÁİ…
+java:S1186+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‘Ø½íüÿÿÿÿ
+T
+java:S1135E"2Complete the task associated to this TODO comment.(ó°˜øÿÿÿÿ8¦’§ÅŒ/
+M
+java:S1128"0Remove this unused import 'androidx.room.Index'.(É‘¤Á8¦’§ÅŒ/
+T
+java:S1135N"2Complete the task associated to this TODO comment.(•€âøÿÿÿÿ8±¤ªÅŒ/

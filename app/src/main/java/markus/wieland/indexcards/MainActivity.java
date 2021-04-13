@@ -15,6 +15,8 @@ import java.util.List;
 
 import markus.wieland.defaultappelements.uielements.activities.CreateItemActivity;
 import markus.wieland.defaultappelements.uielements.activities.DefaultActivity;
+import markus.wieland.games.GameActivity;
+import markus.wieland.indexcards.practice.PracticeConfiguration;
 import markus.wieland.indexcards.stacks.CreateIndexCardStackActivity;
 import markus.wieland.indexcards.stacks.index_card_stack.IndexCardStackViewModel;
 import markus.wieland.indexcards.practice.PracticeActivity;
@@ -81,7 +83,7 @@ public class MainActivity extends DefaultActivity implements IndexCardStackInter
 
     @Override
     public void onPractice(IndexCardStackWithIndexCards indexCardStackWithIndexCards) {
-        startActivity(new Intent(this, PracticeActivity.class));
+        startActivity(new Intent(this, PracticeActivity.class).putExtra("markus.wieland.games.CONFIGURATION", new PracticeConfiguration(indexCardStackWithIndexCards.getIndexCards())));
     }
 
     @Override

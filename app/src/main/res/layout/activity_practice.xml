@@ -6,4 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".practice.PracticeActivity">
 
+    <markus.wieland.indexcards.practice.PracticeGameBoardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/activity_practice_game_board"
+        app:layout_for_game_board="@layout/layout_game_practice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <markus.wieland.indexcards.practice.PracticeEndScreen
+        android:id="@+id/activity_practice_end_screen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        app:layout_background="@layout/layout_practice_end_screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
