@@ -1,9 +1,9 @@
 
-T
-java:S1068"7Remove this unused "imageViewForeground" private field.(‡Υ¬…8Άϋνδ/
 
 java:S1450 "bRemove the "imageViewBackground" field and declare it as a local variable in the relevant methods.(µΒΒ8Άϋνδ/
 T
 java:S1068 "7Remove this unused "imageViewBackground" private field.(µΒΒ8Άϋνδ/
 
 java:S1450"bRemove the "imageViewForeground" field and declare it as a local variable in the relevant methods.(‡Υ¬…8Άϋνδ/
+T
+java:S1068"7Remove this unused "imageViewForeground" private field.(‡Υ¬…8Άϋνδ/

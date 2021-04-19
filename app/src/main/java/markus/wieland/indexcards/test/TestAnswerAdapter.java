@@ -52,7 +52,7 @@ public class TestAnswerAdapter extends DefaultAdapter<IndexCard, TestAnswerAdapt
             itemView.setOnClickListener(view -> onClick(indexCard));
             // TODO im Level kann man herausfinden ob der Rück under Vorderseite getauscht werden sollen
 
-            //TODO danach ein paar sekunden warten und dann weiter oder weiter erst per Knopfdruck
+            //TODO danach ein paar sekunden warten und dann weiter
         }
 
         private void onClick(IndexCard answerOfUser) {
